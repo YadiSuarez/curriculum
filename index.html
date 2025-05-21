@@ -24,15 +24,46 @@
     <main>
         <section id="perfil">
             <h2>Perfil</h2>
-            <!-- Información personal o perfil profesional -->
+            <img src="https://placehold.co/150/png" alt="Foto de Yadira Suárez" >
+            <p>Hola, soy Yadira Suárez, una estudiante apasionada por la tecnología y el desarrollo personal. Me encanta aprender y enfrentar nuevos desafíos.</p> 
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
-            <!-- Experiencia laboral -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Periodo</th>
+                        <th>Cargo</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024 (Octubre- Enero)</td>
+                        <td>Ayudante en la materia Sistema de bases de datos</td>
+                        <td>Desarrollo de diagramas, uso del lenguaje SQL</td>
+                    </tr>
+                  
+                </tbody>
+            </table>
         </section>
         <section id="educacion">
             <h2>Educación</h2>
-            <!-- Educación -->
+            <ol>
+                <li>
+                    <strong>Ingeniería en Sistemas</strong> – Universidad Técnica del Litoral (ESPOL)  
+                    <br>Año de inicio: 2023 – En curso
+                </li>
+                <li>
+                    <strong>Bachiller Técnico en Informática</strong> – Colegio Fiscal Técnico Francisco de Orellana  
+                    <br>Graduación: 2023
+                </li>
+                <li>
+                    <strong>Educación Básica</strong> – Unidad Educativa Enrique Gil Gilbert
+                    <br>Finalizada: 2017
+                </li>
+            </ol>
+
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
@@ -40,7 +71,69 @@
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
-            <!-- Información de contacto -->
+            <p>Si deseas ponerte en contacto conmigo, por favor completa el siguiente formulario:</p>
+            
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <fieldset>
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <label>
+                        <input type="radio" name="contacto" value="email" required>
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contacto" value="telefono" required>
+                        Teléfono
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Área de intereses</legend>
+                    <input type="checkbox" name="tecnologia" id="tecnologia">
+                    <label for="tecnologia">Tecnología</label>
+                    <input type="checkbox" name="educacion" id="educacion">
+                    <label for="educacion">Educación</label>
+                    <input type="checkbox" name="investigacion" id="investigacion">
+                    <label for="investigacion">Investigación</label>
+                    <input type="checkbox" name="otros" id="otros">
+                    <label for="otros">Otros</label>
+                </fieldset>
+             
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p>O puedes contactarme directamente a través de:</p>
+            <ul>
+                <li><a href="mailto:melissa16suarez@hotmail.com">Correo</a>
+                <li><a href="https://www.linkedin.com/in/yadimelsuarez/" target="_blank">LinkedIn</a></li>
+            </ul>
+            <div style="width:100%;max-width:400px;">
+                <iframe
+                    src="https://www.google.com/maps?q=-2.147389,-79.964664&z=16&output=embed"
+                    width="100%"
+                    height="250"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <section id="Referencias">
+            <h2>Referencias</h2>
+            
         </section>
     </main>
     <footer>
