@@ -1,0 +1,49 @@
+body{
+    margin: 3%;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fdf2e7;
+}
+h1{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-color: #ffcd8a;
+}
+.subtitle{
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    color:  rgb(151 156 165 / 0.89);
+    text-transform: uppercase;
+    font-style: italic;
+    padding-left: 1%;
+    background-color: #ffdaa8;
+}
+
+.photo{
+    width: 8vw;
+    height:auto;
+}
+
+footer p{
+    text-align: left;
+    font-style: italic;
+}
+
+nav > ul{
+    list-style: none;
+}
+
+section{
+    border:0.2pt solid #cedddd;
+    margin-top: 4px 2px 8px 2px;
+    padding: 1.5% 0.8%;
+    margin-bottom: 1.2rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+}

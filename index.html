@@ -5,11 +5,15 @@
     <meta name="keywords" content="CV, Curriculum, Yadira Suárez, Experiencia, Educación">
     <meta name="description" content="Curriculum Vitae de Yadira Suárez. Experiencia profesional, educación y habilidades.">
     <meta name="author" content="Yadira Suárez">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
     <title>Curriculum Vitae de Yadira Suárez</title>
 </head>
 <body>
     <header>
-        <h1>Curriculum Vitae</h1>
+        <h1>Mi Curriculum Vitae</h1>
         <nav>
             <!-- Enlaces de navegación, por ejemplo: -->
             <ul>
@@ -18,17 +22,18 @@
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="perfil">
-            <h2>Perfil</h2>
-            <img src="https://placehold.co/150/png" alt="Foto de Yadira Suárez" >
+            <h2 class="subtitle">Perfil</h2>
+            <img src="https://placehold.co/150/png" alt="Foto de Yadira Suárez" class="photo" >
             <p>Hola, soy Yadira Suárez, una estudiante apasionada por la tecnología y el desarrollo personal. Me encanta aprender y enfrentar nuevos desafíos.</p> 
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
             <table>
                 <thead>
                     <tr>
@@ -39,7 +44,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>2024 (Octubre- Enero)</td>
+                        <td>2024</td>
+                        <td>Participación en la ruta de innovación</td>
+                        <td>Se dió a conocer un proyecto en java, con simulación de led en maqueta</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
                         <td>Ayudante en la materia Sistema de bases de datos</td>
                         <td>Desarrollo de diagramas, uso del lenguaje SQL</td>
                     </tr>
@@ -48,45 +58,59 @@
             </table>
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <ol>
                 <li>
-                    <strong>Ingeniería en Sistemas</strong> – Universidad Técnica del Litoral (ESPOL)  
+                    <strong>Ingeniería en Sistemas</strong> – Escuela Superior Politécnica del Litoral (ESPOL)  
                     <br>Año de inicio: 2023 – En curso
                 </li>
                 <li>
-                    <strong>Bachiller Técnico en Informática</strong> – Colegio Fiscal Técnico Francisco de Orellana  
+                    <strong>Bachiller Técnico en Informática</strong> – Colegio Técnico Fiscal Francisco de Orellana  
                     <br>Graduación: 2023
                 </li>
                 <li>
-                    <strong>Educación Básica</strong> – Unidad Educativa Enrique Gil Gilbert
+                    <strong>Educación Básica</strong> – Unidad Educativa Fiscal Enrique Gil Gilbert
                     <br>Finalizada: 2017
                 </li>
             </ol>
 
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
-            <!-- Habilidades -->
+            <h2 class="subtitle">Habilidades</h2>
+            <ul>
+                <li>Lenguajes de programación: Java, Python, Kotlin, PHP</li>
+                <li>Desarrollo web: HTML, CSS, JavaScript</li>
+                <li>Base de datos: SQL</li>
+                <li>Herramientas de diseño: Figma, Canva</li>
+                <li>Idiomas: Español (nativo), Inglés (Básico)</li>
+                <li>Trabajo en equipo y liderazgo</li>
+                <li>Resolución de problemas</li>
+             </ul>   
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <p>Si deseas ponerte en contacto conmigo, por favor completa el siguiente formulario:</p>
             
             <form action="#" method="post">
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
 
-                <label for="motivo">Motivo de contacto:</label>
-                <select id="motivo" name="motivo" required>
-                    <option value="" disabled selected>Seleccione una opción</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="colaboracion">Colaboración</option>
-                    <option value="otro">Otro</option>
-                </select>
+                <div>
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="colaboracion">Colaboración</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
 
-                <fieldset>
-                    <legend>¿Cómo prefieres ser contactado?</legend>
+                <div>
+                    <label>¿Cómo prefieres ser contactado?</label>
                     <label>
                         <input type="radio" name="contacto" value="email" required>
                         Email
@@ -95,9 +119,13 @@
                         <input type="radio" name="contacto" value="telefono" required>
                         Teléfono
                     </label>
-                </fieldset>
-                <fieldset>
-                    <legend>Área de intereses</legend>
+                </div>
+                <div>
+                    <label for="iptcontacto">Digite número o teléfono:</label>
+                    <input type="text" name="contacto" id="iptcontacto" required>
+                </div>
+                <div>
+                    <div>Área de intereses</div>
                     <input type="checkbox" name="tecnologia" id="tecnologia">
                     <label for="tecnologia">Tecnología</label>
                     <input type="checkbox" name="educacion" id="educacion">
@@ -106,11 +134,13 @@
                     <label for="investigacion">Investigación</label>
                     <input type="checkbox" name="otros" id="otros">
                     <label for="otros">Otros</label>
-                </fieldset>
+                </div>
              
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
+                </div>
+                
 
                 <button type="submit">Enviar</button>
             </form>
@@ -131,13 +161,14 @@
                 </iframe>
             </div>
         </section>
-        <section id="Referencias">
-            <h2>Referencias</h2>
+        <section id="referencias">
+            <h2 class="subtitle">Referencias</h2>
             
         </section>
     </main>
     <footer>
-        <!-- Información adicional o derechos de autor -->
+        <p>&copy; 2025 Yadira Suárez. Todos los derechos reservados.</p>
+        <p>Diseñado por Yadira Suárez</p>
     </footer>
 </body>
 </html>
