@@ -1,8 +1,9 @@
 body{
     margin: 3%;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #fdf2e7;
+    background-color: #fdf6e3;
+    color: #333;
+    font-size: 16px;
 }
 h1{
     font-family: "Poetsen One", sans-serif;
@@ -12,12 +13,14 @@ h1{
     background-color: #ffcd8a;
 }
 .subtitle{
+    margin-top: 0;
     font-family: "Space Mono", monospace;
     font-weight: 700;
     color:  rgb(151 156 165 / 0.89);
     text-transform: uppercase;
     font-style: italic;
-    padding-left: 1%;
+    width: fit-content;
+    padding: 0 1%;
     background-color: #ffdaa8;
 }
 
@@ -33,6 +36,47 @@ footer p{
 
 nav > ul{
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+nav > ul li a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    border-radius: 25px;
+    transition: color .3s, background-color .3s;
+}
+
+nav > ul li a:hover{
+    color: #fff;
+    background-color: #ff9729;
+    cursor: pointer;
+    border: 1px solid #a65600;
+    
+}
+
+@media (max-width: 600px) {
+    body{
+        margin: 1%;
+        font-size: 14px;
+    }
+    .photo{
+        width: 20vw;
+    }
+    nav > ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav > ul li a {
+        margin: 0.5rem 0;
+    }
+    form {
+        font-size: 14px;
+    }
 }
 
 section{
@@ -46,4 +90,57 @@ section{
     -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
     -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    background-color: #fffcf6;
+}
+
+form div{
+    margin: 0.5rem 0;
+}
+form{
+    margin: 1.5% 0.8%;
+    padding: 1.5% 1.5%;
+    font-size: 18px;
+    background-color: #ebd7c3;
+    max-width: fit-content;
+}
+.button {
+   text-align: center;
+}
+.button button{
+    border: 1px solid #a65600;
+    max-width: fit-content;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    color: #a65600;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 0.5rem 0.5rem;
+    transition: color .3s, background-color .3s;
+}
+
+.button button:hover{
+    color: #fff;
+    background-color: #ff9729;
+    cursor: pointer;
+}
+
+form input, select, textarea{
+    border: 1px solid #a65600;
+    color: #a65600;
+    font-weight: 400;
+}
+
+form input:focus, select:focus, textarea:focus{
+    border: 3px solid #ff9729;
+    outline: none;
+}
+
+form input[type="radio"]:checked, input[type="checkbox"]:checked{
+    accent-color: #ff9729;
+    outline-offset: none;
+}
+
+#contacto a{
+    margin: 0.5rem;
 }
