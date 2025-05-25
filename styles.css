@@ -1,14 +1,16 @@
+html {
+    font-size: 100%;
+
 body{
     margin: 3%;
     padding: 0;
     background-color: #fdf6e3;
     color: #333;
-    font-size: 16px;
+    font-size: 1rem;
 }
 h1{
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
-    font-style: normal;
     text-align: center;
     background-color: #ffcd8a;
 }
@@ -38,16 +40,17 @@ nav > ul{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1rem;
     padding: 0;
+    flex-wrap: wrap;
 }
 nav > ul li a {
-    margin: 0 1rem;
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 25px;
+    font-size: 1rem;
     transition: color .3s, background-color .3s;
 }
 
@@ -62,7 +65,7 @@ nav > ul li a:hover{
 @media (max-width: 600px) {
     body{
         margin: 1%;
-        font-size: 14px;
+        font-size: 0.9rem;
     }
     .photo{
         width: 20vw;
@@ -73,9 +76,10 @@ nav > ul li a:hover{
     }
     nav > ul li a {
         margin: 0.5rem 0;
+        font-size: 1rem;
     }
     form {
-        font-size: 14px;
+        font-size: 1rem;
     }
 }
 
@@ -99,7 +103,7 @@ form div{
 form{
     margin: 1.5% 0.8%;
     padding: 1.5% 1.5%;
-    font-size: 18px;
+    font-size: 1.125rem;
     background-color: #ebd7c3;
     max-width: fit-content;
 }
@@ -112,7 +116,7 @@ form{
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     color: #a65600;
-    font-size: 18px;
+    font-size: 1.125rem;
     background-color: transparent;
     border-radius: 25px;
     padding: 0.5rem 0.5rem;
@@ -138,7 +142,6 @@ form input:focus, select:focus, textarea:focus{
 
 form input[type="radio"]:checked, input[type="checkbox"]:checked{
     accent-color: #ff9729;
-    outline-offset: none;
 }
 
 #contacto a{
