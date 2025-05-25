@@ -78,8 +78,8 @@ nav > ul li a:hover{
         margin: 0.5rem 0;
         font-size: 1rem;
     }
-    form {
-        font-size: 1rem;
+    form label, form div, form .button button{
+        font-size: 0.9rem;
     }
 }
 
