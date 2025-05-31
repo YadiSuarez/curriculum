@@ -1,184 +1,305 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="CV, Curriculum, Yadira Suárez, Experiencia, Educación">
-    <meta name="description" content="Curriculum Vitae de Yadira Suárez. Experiencia profesional, educación y habilidades.">
-    <meta name="author" content="Yadira Suárez">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="CV, Curriculum, Yadira Suárez, Experiencia, Educación"
+    />
+    <meta
+      name="description"
+      content="Curriculum Vitae de Yadira Suárez. Experiencia profesional, educación y habilidades."
+    />
+    <meta name="author" content="Yadira Suárez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javas.js"></script>
     <title>Curriculum Vitae de Yadira Suárez</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Mi Curriculum Vitae</h1>
-        <nav>
-            <ul>
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#formacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#referencias">Referencias</a></li>
-            </ul>
-        </nav>
+      <h1>
+        Mi Curriculum Vitae
+        <span onclick="bar()" class="icon-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </span>
+      </h1>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#perfil">Sobre mí</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#formacion">Educación</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#referencias">Referencias</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="perfil">
-            <h2 class="subtitle">Perfil</h2>
-            <img src="https://placehold.co/150/png" alt="Foto de Yadira Suárez" class="photo" >
-            <p>Hola, soy Yadira Suárez, una estudiante apasionada por la tecnología y el desarrollo personal. Me encanta aprender y enfrentar nuevos desafíos.</p> 
-        </section>
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Periodo</th>
-                        <th>Cargo</th>
-                        <th>Descripción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2024</td>
-                        <td>Participación en la ruta de innovación</td>
-                        <td>Se dió a conocer un proyecto en java, con simulación de led en maqueta</td>
-                    </tr>
-                    <tr>
-                        <td>2024</td>
-                        <td>Ayudante en la materia Sistema de bases de datos</td>
-                        <td>Desarrollo de diagramas, uso del lenguaje SQL</td>
-                    </tr>
-                  
-                </tbody>
-            </table>
-        </section>
-        <section id="formacion">
-            <h2 class="subtitle">Educación</h2>
-            <ol>
-                <li>
-                    <strong>Ingeniería en Sistemas</strong> – Escuela Superior Politécnica del Litoral (ESPOL)  
-                    <br>Año de inicio: 2023 – En curso
-                </li>
-                <li>
-                    <strong>Bachiller Técnico en Informática</strong> – Colegio Técnico Fiscal Francisco de Orellana  
-                    <br>Graduación: 2023
-                </li>
-                <li>
-                    <strong>Educación Básica</strong> – Unidad Educativa Fiscal Enrique Gil Gilbert
-                    <br>Finalizada: 2017
-                </li>
-            </ol>
+      <section id="perfil">
+        <h2 class="subtitle">Sobre mí</h2>
+        <div class="info-perfil">
+          <img
+            src="recursos/mel.png"
+            alt="Foto de Yadira Suárez"
+            class="photo"
+          />
+          <p>
+            Hola, soy Yadira Suárez, tengo 20 años y actualmente estoy cursando
+            el quinto semestre en la carrera de Ingeniería en ciencias
+            computacionales en ESPOL.
+            <br />
+            Me apasiona la tecnología y el desarrollo personal. Me encanta
+            aprender y enfrentar nuevos desafíos. <br />
+            Si quieres conocer más sobre mis habilidades y proyectos que he
+            participado, puedes visitar mi portafolio en
+            <a href="https://github.com/YadiSuarez">GitHub</a>.
+          </p>
+        </div>
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/00ek3M5XYRA?si=ZPdtN9ggnHUQ3iuF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
 
-        </section>
-        <section id="habilidades">
-            <h2 class="subtitle">Habilidades</h2>
-            <ul>
-                <li>Lenguajes de programación: Java, Python, Kotlin, PHP</li>
-                <li>Desarrollo web: HTML, CSS, JavaScript</li>
-                <li>Base de datos: SQL</li>
-                <li>Herramientas de diseño: Figma, Canva</li>
-                <li>Idiomas: Español (nativo), Inglés (Básico)</li>
-                <li>Trabajo en equipo y liderazgo</li>
-                <li>Resolución de problemas</li>
-             </ul>   
-        </section>
-        <section id="contacto">
-            <h2 class="subtitle">Contacto</h2>
-            <p>Si deseas ponerte en contacto conmigo, por favor completa el siguiente formulario:</p>
-            
-            <form action="#" method="post">
-                
-                <div>
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
+      <section id="experiencia">
+        <h2 class="subtitle">Experiencia</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Periodo</th>
+              <th>Cargo</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2024</td>
+              <td>Participación en la ruta de innovación</td>
+              <td>
+                Se dió a conocer un proyecto en java, con simulación de led en
+                maqueta
+              </td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>Ayudante en la materia Sistema de bases de datos</td>
+              <td>Desarrollo de diagramas, uso del lenguaje SQL</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="formacion">
+        <h2 class="subtitle">Educación</h2>
+        <ol>
+          <li>
+            <strong>Ingeniería en Sistemas</strong> – Escuela Superior
+            Politécnica del Litoral (ESPOL) <br />Año de inicio: 2023 – En curso
+          </li>
+          <li>
+            <strong>Bachiller Técnico en Informática</strong> – Colegio Técnico
+            Fiscal Francisco de Orellana <br />Graduación: 2023
+          </li>
+          <li>
+            <strong>Educación Básica</strong> – Unidad Educativa Fiscal Enrique
+            Gil Gilbert <br />Finalizada: 2017
+          </li>
+        </ol>
+      </section>
+      <section id="habilidades">
+        <h2 class="subtitle">Habilidades</h2>
+        <ul>
+          <li>Lenguajes de programación: Java, Python, Kotlin, PHP</li>
+          <li>Desarrollo web: HTML, CSS, JavaScript</li>
+          <li>Base de datos: SQL</li>
+          <li>Herramientas de diseño: Figma, Canva</li>
+          <li>Idiomas: Español (nativo), Inglés (Básico)</li>
+          <li>Trabajo en equipo y liderazgo</li>
+          <li>Resolución de problemas</li>
+        </ul>
+      </section>
+      <section id="contacto">
+        <h2 class="subtitle">Contacto</h2>
+        <p>
+          Si deseas ponerte en contacto conmigo, por favor completa el siguiente
+          formulario:
+        </p>
 
-                <div>
-                    <label for="motivo">Motivo de contacto:</label>
-                    <select id="motivo" name="motivo" required>
-                        <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="colaboracion">Colaboración</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-                
+        <form action="#" method="post">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="motivo">Motivo de contacto:</label>
+          <select id="motivo" name="motivo" required>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="consulta">Consulta</option>
+            <option value="colaboracion">Colaboración</option>
+            <option value="otro">Otro</option>
+          </select>
 
-                <div>
-                    <label>¿Cómo prefieres ser contactado?</label>
-                    <label>
-                        <input type="radio" name="contacto" value="email" required>
-                        Email
-                    </label>
-                    <label>
-                        <input type="radio" name="contacto" value="telefono" required>
-                        Teléfono
-                    </label>
-                </div>
-                <div>
-                    <label for="iptcontacto">Digite número o teléfono:</label>
-                    <input type="text" name="contacto" id="iptcontacto" required>
-                </div>
-                <div>
-                    <div>Área de intereses</div>
-                    <input type="checkbox" name="tecnologia" id="tecnologia">
-                    <label for="tecnologia">Tecnología</label>
-                    <input type="checkbox" name="educacion" id="educacion">
-                    <label for="educacion">Educación</label>
-                    <input type="checkbox" name="investigacion" id="investigacion">
-                    <label for="investigacion">Investigación</label>
-                    <input type="checkbox" name="otros" id="otros">
-                    <label for="otros">Otros</label>
-                </div>
-             
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
-                </div>
-                
-                <div class="button">
-                    <button type="submit">Enviar</button>
-                </div>
-                
-            </form>
-            <p>O puedes contactarme directamente a través de:</p>
-            <a href="mailto:melissa16suarez@hotmail.com">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-                    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
-                    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
-                </svg> 
-            </a>
-            <a href="https://www.linkedin.com/in/yadimelsuarez/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                </svg>
-            </a>
-            <div style="width:100%;max-width:400px;">
-                <iframe
-                    src="https://www.google.com/maps?q=-2.147389,-79.964664&z=16&output=embed"
-                    width="100%"
-                    height="250"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </section>
-        <section id="referencias">
-            <h2 class="subtitle">Referencias</h2>
-            
-        </section>
+          <label>¿Cómo prefieres ser contactado?</label>
+          <label
+            ><input
+              type="radio"
+              name="contacto"
+              value="email"
+              required
+            />Email</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="contacto"
+              value="telefono"
+              required
+            />Teléfono</label
+          >
+
+          <label for="iptcontacto">Escriba email o teléfono:</label>
+          <input type="text" name="contacto" id="iptcontacto" required />
+          <label>Área de intereses:</label>
+
+          <label
+            ><input
+              type="checkbox"
+              name="tecnologia"
+              id="tecnologia"
+            />Tecnología</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="educacion"
+              id="educacion"
+            />Educación</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="investigacion"
+              id="investigacion"
+            />Investigación</label
+          >
+          <label><input type="checkbox" name="otros" id="otros" />Otros</label>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
+
+          <button class="button" type="submit">Enviar</button>
+        </form>
+        <p>O puedes contactarme directamente a través de:</p>
+        <a href="mailto:melissa16suarez@hotmail.com">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-envelope-at-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+            />
+            <path
+              d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+            />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/yadimelsuarez/" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-linkedin"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+            />
+          </svg>
+        </a>
+        <div style="width: 100%; max-width: 400px">
+          <iframe
+            src="https://www.google.com/maps?q=-2.147389,-79.964664&z=16&output=embed"
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
+      <section id="referencias">
+        <h2 class="subtitle">Referencias</h2>
+        <article>
+          <blockquote>
+            “Su compromiso y responsabilidad marcaron una gran diferencia en la
+            entrega oportuna de nuestro proyecto.”
+          </blockquote>
+          <p>
+            <strong>Andrés Salazar</strong><br />
+            Pasante del Banco de Guayaquil <br />
+            Trabajé con Andrés en el desarrollo de una programa para encontrar
+            la ruta más corta.
+          </p>
+        </article>
+        <article>
+          <blockquote>
+            “Su enfoque resolutivo y su habilidad para comunicar ideas técnicas
+            con claridad fueron claves para que el equipo avanzara sin
+            fricciones.”
+          </blockquote>
+          <p>
+            <strong>Felix Romero</strong><br />
+            Líder Técnico, InnovaTech Labs<br />
+            Durante tres meses colaboré con Felix en un sistema de bases de
+            datos de un inventario.
+          </p>
+        </article>
+        <article>
+          <blockquote>
+            “Es una estudiante que no solo cumple, sino que supera
+            expectativas.”
+          </blockquote>
+          <p>
+            <strong>Jessica Suárez</strong><br />
+            Consultora de Procesos, Nexa Consultores<br />
+            Mi colaboración con Jessica fue en un proyecto de automatización de
+            informes financieros.
+          </p>
+        </article>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2025 Yadira Suárez. Todos los derechos reservados.</p>
-        <p>Diseñado por Yadira Suárez</p>
+      <p>&copy; 2025 Yadira Suárez. Todos los derechos reservados.</p>
+      <p>Diseñado por Yadira Suárez</p>
     </footer>
-</body>
+  </body>
 </html>
-
