@@ -1,13 +1,24 @@
 html {
     font-size: 100%;
+    scroll-padding-top: 100px;
 }
 body{
-    margin: 3%;
-    padding: 0;
+    padding: 0%;
     background-color: #fef7f1;
     color: #333;
     font-size: 1rem;
 }
+header {
+  position: sticky;
+  width: 100%;;
+  top:0;    
+  padding-bottom: 2px;
+  z-index: 1000;
+  margin-bottom: 2%;
+  background-color: #ffffff; 
+}
+
+
 h1{
     position:relative;
     font-family: "Poetsen One", sans-serif;
@@ -50,7 +61,7 @@ h1{
 .icon-menu{
     position: absolute;
     right: 1rem;
-    top: 50%;                         /* Centra verticalmente */
+    top: 50%;                         
     transform: translateY(-50%);
     display: none;
 }
@@ -123,6 +134,7 @@ tr:hover {
     
 
 section{
+    margin: 3%;
     border:0.2pt solid #cedddd;
     margin-top: 4px 2px 8px 2px;
     padding: 1.5% 0.8%;
@@ -134,6 +146,13 @@ section{
     -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
     background-color: #fffcf6;
+    transition: box-shadow 0.3s ease;   
+}
+
+section:hover {
+  box-shadow: 0 8px 20px rgba(235, 234, 234, 0.60), 0 0 12px rgba(255, 200, 100, 0.3);
+  transform: translateY(-4px);
+  background-color: #fff8e1;
 }
 
 form{
@@ -188,6 +207,25 @@ form input[type="radio"]:checked, input[type="checkbox"]:checked{
     margin: 0.5rem;
 }
 
+.container-contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 1rem;
+}
+
+.otherMedios{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.conocimientos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
 #referencias > h2{
     grid-column: 1/-1;
 }
@@ -219,7 +257,7 @@ form input[type="radio"]:checked, input[type="checkbox"]:checked{
     padding: 1.1% 0;
     display: flex;
     justify-content: center;
-    background-color:#ebd7c3;   
+    background-color:#f7ede3;   
 }
 
 
@@ -267,4 +305,18 @@ form input[type="radio"]:checked, input[type="checkbox"]:checked{
     #referencias > h2{
     grid-column: 1;
     }
+
+    .container-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+    .otherMedios{
+        display: block;
+    }
+
+    .conocimientos{
+        grid-template-columns: 1fr;
+    }
+
 }
